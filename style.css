@@ -1,0 +1,83 @@
+/* リセット */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+/* アニメーション用 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ヘッダー */
+header {
+  padding: 50px 20px;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #4CAF50;
+  object-fit: cover;
+}
+
+header h1 { margin: 20px 0 10px 0; }
+header p { color: #666; }
+
+/* ボタンリンク */
+.buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+/* スキルカード */
+.skill-cards, .project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 150px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* セクション */
+section { margin: 50px 20px; }
+
+/* フッター */
+footer { margin: 50px 0 20px 0; color: #999; }
